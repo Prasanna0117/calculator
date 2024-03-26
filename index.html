@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <input type="text" value="0" disabled>
+        </div>
+        <div class="buttons">
+            <button class="operation" onclick="clearLastNumber()">CE</button>
+            <button class="operation" onclick="clearAll()">C</button>
+            <button class="operation" onclick="negate()">+/-</button>
+            <button class="operation" onclick="percent()">%</button>
+            <button class="operation" onclick="divide(event)">/</button>
+            <button class="numbers" onclick="AddNumber(7)">7</button>
+            <button class="numbers" onclick="AddNumber(8)">8</button>
+            <button class="numbers" onclick="AddNumber(9)">9</button>
+            <button class="operation" onclick="multiply(event)">x</button>
+            <button class="numbers" onclick="AddNumber(4)">4</button>
+            <button class="numbers" onclick="AddNumber(5)">5</button>
+            <button class="numbers" onclick="AddNumber(6)">6</button>
+            <button class="operation" onclick="subtract(event)">-</button>
+            <button class="numbers" onclick="AddNumber(1)">1</button>
+            <button class="numbers"onclick="AddNumber(2)">2</button>
+            <button class="numbers"onclick="AddNumber(3)">3</button>
+            <button class="operation" onclick="add(event)">+</button>
+            <button class="numbers" onclick="AddNumber(0)">0</button>
+            <button class="numbers" onclick="AddNumber('.')">.</button>
+            <button class="operation" onclick="result(event)">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>    
+</body>
+</html>
